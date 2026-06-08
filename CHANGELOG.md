@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://github.com/google/adk-java/compare/v1.4.0...v1.5.0) (2026-06-08)
+
+
+### Features
+
+* Enhance BigQuery Agent Analytics Plugin with new event types ([ec93f50](https://github.com/google/adk-java/commit/ec93f50f10125f5a3728d372e16be4530f12553f))
+* support optional types in function tool parameters ([9a06dd3](https://github.com/google/adk-java/commit/9a06dd34dc823af54d3ea229a0d141768593d376))
+
+
+### Bug Fixes
+
+* SkillMdPath should be public ([29d3203](https://github.com/google/adk-java/commit/29d3203a6fab4268a3588acddde7b59c73f7b624))
+* wait for the Runner to persist a step's events before the ADK flow's next step (sequential-tool-execution race) ([0a40557](https://github.com/google/adk-java/commit/0a405576a14393a4131f014defc354b44644c4f0))
+
 ## [1.4.0](https://github.com/google/adk-java/compare/v1.3.0...v1.4.0) (2026-05-29)
 
 
