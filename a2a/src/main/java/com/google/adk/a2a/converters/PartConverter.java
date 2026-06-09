@@ -80,7 +80,13 @@ public final class PartConverter {
     }
 
     if (a2aPart instanceof TextPart textPart) {
-      return com.google.genai.types.Part.builder().text(textPart.getText()).build();
+      com.google.genai.types.Part.Builder partBuilder =
+          com.google.genai.types.Part.builder().text(textPart.getText());
+      if (textPart.getMetadata() != null
+          && Boolean.TRUE.equals(textPart.getMetadata().get("thought"))) {
+        partBuilder.thought(true);
+      }
+      return partBuilder.build();
     }
 
     if (a2aPart instanceof FilePart filePart) {
